@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AgriTech</title>
+</head>
+<style>
+html {
+  font-size: 62.5%; /* 16px*62.5 = 10px = 1rem */
+  box-sizing: border-box;
+}
+body {
+  font: 1.6rem Helvetica;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url(static/Agri1.jpg); 
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+a {
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgba(235, 232, 56, 0.05);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+.title {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  color: #fff;
+  font-size: 90px;
+}
+.title1 {
+  position: absolute;
+  top: 50%;
+  left: 49%;
+  transform: translate(-25%, -1%);
+  color: #fff;
+  font-size: 40px;
+}
+.button {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.brand img {
+  height: 7rem;
+  width: 7rem;
+  padding: 1rem;
+}
+
+</style>
+<body>
+    <div class="grid-container">
+        
+        <header class="header">
+            <div class = "brand">
+                <!-- <a href="index.html">AgriTech</a> -->
+                <img class="brand" src="static/logo.jpg" alt="Logo">
+            </div>
+        </header>
+        <div class="main">
+            <h1 class ="title">AGRITECH</h1>
+            <br>
+            <div>
+              <h2 class = "title1">Farming Made Easy....</h2>
+            </div>
+            </div>
+            <div class ="button">
+            <br><br>
+            <a href="/login" class ="btn">Log In</a>
+            <a href="/signup" class ="btn">Sign Up</a>
+        </div>
+        
+        
+        <footer class="footer">
+            Copyright 2020
+        </footer>
+    </div>
+
+</body>
+</html>

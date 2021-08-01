@@ -1,0 +1,66 @@
+{% extends 'base.html' %} 
+{% block title %} Pesticides{% endblock title %}
+
+
+{% block body %} 
+<div class="container my-4">
+<h1>Pesticides</h1>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/herbicides">
+            <img src="../static/herbicides.jpg" height="200" class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+              <h3>Herbicides</h3>
+              <h6 class="card-text">Kill the weeds without killing the Earth...</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary"><a href="/herbicides">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/fungicides">
+            <img src="../static/fungicides.jpg" height="200" class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+               <h3>Fungicides</h3>
+              <h6 class="card-text">Wash off the fungi with their spores...</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary"><a href="/fungicides">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/insecticides">
+            <img src="../static/insecticides.jpg" height="200" class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+              <h3>Insecticides</h3>
+              <h6 class="card-text">Protect your crop from the nasty insects...</h6>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button"  class="btn btn-sm btn-outline-secondary"><a href="/insecticides">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+          </div>
+    </div>
+
+{% endblock body %}

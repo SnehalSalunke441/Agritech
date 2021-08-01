@@ -1,0 +1,68 @@
+{% extends 'base.html' %} 
+{% block title %} Modern Technology {% endblock title %} 
+ 
+{% block body %} 
+<div class="container my-4">
+<h1>Modern Technologies</h1>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/indoorvp">
+            <img src="../static/indoorvp.jpg" height="200" class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+               <h3>Indoor Vertical Farming</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/indoorvp">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/farmauto">
+            <img src="../static/farmauto.jpg" height="200" class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+            <h3>Farm Automation</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/farmauto">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <a href="/greenhousefarm">
+            <img src="../static/greenhousefarm.jpg" height="200"  class="d-block w-100" alt="...">
+            </a>
+            <div class="card-body">
+            <h3>Greenhouse Farming</h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/greenhousefarm">Explore</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        
+
+        
+      </div>
+    </div>
+
+
+{% endblock body %}
